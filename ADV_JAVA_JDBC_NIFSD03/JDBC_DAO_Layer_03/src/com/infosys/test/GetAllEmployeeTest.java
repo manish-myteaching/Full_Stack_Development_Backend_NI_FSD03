@@ -1,0 +1,20 @@
+package com.infosys.test;
+import java.util.List;
+
+import com.infosys.dao.EmployeeDAO;
+import com.infosys.dao.EmployeeDAOImpl;
+import com.tcs.dto.Employee;
+
+public class GetAllEmployeeTest {
+
+	public static void main(String[] args) {
+		EmployeeDAO empDAO = new EmployeeDAOImpl();
+		List<Employee> listEmp = empDAO.getAllEmployeeDeatail();
+
+		for (Employee emp : listEmp) {
+			System.out.println(emp);
+		}
+
+	}
+
+}
