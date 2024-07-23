@@ -9,5 +9,9 @@ public class Parent {
 	void show(String s) {
 		System.out.println("parent-show " + s);
 	}
+	
+	static void display() {
+		System.out.println("parent display");
+	}
 
 }

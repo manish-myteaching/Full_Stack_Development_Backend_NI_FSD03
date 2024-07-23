@@ -8,7 +8,8 @@ public class Test {
 		child.show();
 		
 		Parent parent= new Child(); // Run time polymorphism // Upcasting
-		parent.show();
+		parent.show();	
+		parent.display();
 		
 
 	}

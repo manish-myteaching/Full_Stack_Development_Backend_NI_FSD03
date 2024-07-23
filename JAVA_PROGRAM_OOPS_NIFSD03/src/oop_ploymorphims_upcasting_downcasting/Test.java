@@ -15,6 +15,7 @@ public class Test {
 		Child child=(Child)parent; // Downcasting
 		child.show();
 		child.print();
+	
 		
 
 	}
