@@ -10,7 +10,7 @@ public class MessageUtil {
 	// Find your Account Sid and Token at console.twilio.com
 	public static final String ACCOUNT_SID = "XXXXXXXXXXXXXXXXXXXXXXXXXXX";//create your account and put 
 	public static final String AUTH_TOKEN = "XXXXXXXXXXXXXXXXXXXXXXXXXXXX";//create your account and put 
-	public static final String TWILIO_NUMBER = "+19784044797";
+	public static final String TWILIO_NUMBER = "XXXXXXXXXX";
 
 	public static void sendMessage(String toNumber, String toMessage) {
 		Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
