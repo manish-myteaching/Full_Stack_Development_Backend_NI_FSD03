@@ -36,7 +36,6 @@ public class RegistrationController extends HttpServlet {
 			throws ServletException, IOException {
 		response.setContentType("text/html");
 		PrintWriter pw = response.getWriter();
-
 		String firstName = request.getParameter("firstName");
 		String lastName = request.getParameter("lastName");
 		String contactNumber = request.getParameter("contactNumber");
