@@ -12,7 +12,7 @@ public class CustomerTest {
 
 		// IOC Container
 		ApplicationContext applicationContext = new ClassPathXmlApplicationContext(
-				"com/citi/conf/applicationContext.xml");
+				"./applicationContext.xml");
 		Object obj = applicationContext.getBean("customer");
 		Customer customer = (Customer) obj;
 		//customer.getCustomerDetails();
