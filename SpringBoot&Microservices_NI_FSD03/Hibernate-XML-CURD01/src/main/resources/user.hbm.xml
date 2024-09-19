@@ -1,0 +1,12 @@
+<hibernate-mapping>
+	<class name="com.professionalit.model.User" table="USER">
+		<id name="id" column="ID">
+			<generator class="increment" />
+		</id>
+
+		<property name="name" column="NAME" />
+		<property name="email" column="EMAIL" />
+
+		<!-- Add other properties and mappings as needed -->
+	</class>
+</hibernate-mapping>
