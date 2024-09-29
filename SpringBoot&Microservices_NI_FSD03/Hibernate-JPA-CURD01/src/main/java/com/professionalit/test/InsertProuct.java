@@ -1,8 +1,9 @@
 package com.professionalit.test;
 
 import org.h2.tools.Server;
+
 import com.professionalit.dao.ProductDao;
-import com.professionalit.model.Product;
+import com.professionalit.entity.Product;
 
 public class InsertProuct {
 	public static void main(String[] args) throws InterruptedException {
@@ -19,7 +20,7 @@ public class InsertProuct {
 			product.setName("Cookies");
 			product.setPrice(2000.00);
 			product.setQuantity(2);
-			userDao.createUser(product);
+			userDao.createProduct(product);
 			System.out.println("User created with ID: " + product.getId());
 			Thread.sleep(500000);
 		} catch (Exception e) {

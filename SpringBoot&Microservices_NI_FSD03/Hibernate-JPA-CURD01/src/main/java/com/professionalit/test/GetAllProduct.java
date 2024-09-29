@@ -3,7 +3,7 @@ package com.professionalit.test;
 import java.util.List;
 
 import com.professionalit.dao.ProductDao;
-import com.professionalit.model.Product;
+import com.professionalit.entity.Product;
 
 public class GetAllProduct {
 

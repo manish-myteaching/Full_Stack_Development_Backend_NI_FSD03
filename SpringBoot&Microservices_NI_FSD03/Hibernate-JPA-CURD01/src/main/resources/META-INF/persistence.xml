@@ -6,7 +6,7 @@
 	version="2.2">
 	<persistence-unit name="my-persistence-unit">
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-		<class>com.professionalit.model.Product</class>
+		<class>com.professionalit.entity.Product</class>
 		<properties>
 			<!-- JDBC Database connection settings -->
 			<property name="javax.persistence.jdbc.driver"

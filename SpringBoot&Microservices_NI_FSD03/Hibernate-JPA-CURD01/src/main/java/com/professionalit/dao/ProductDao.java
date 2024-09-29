@@ -2,7 +2,7 @@ package com.professionalit.dao;
 
 import java.util.List;
 
-import com.professionalit.model.Product;
+import com.professionalit.entity.Product;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
