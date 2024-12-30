@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<!-- <bean id="customer" class="com.citi.bean.Customer" scope="singleton"> 
+		<property name="customerId" value="101" /> <property name="customerName" 
+		value="Alex" /> <property name="contachNumber" value="+41-4568585944" /> 
+		<property name="address" ref="address" /> </bean> -->
+
+	<bean id="customer2" class="com.professionalit.bean.Customer2">
+		<constructor-arg name="customerId" value="101" />
+		<constructor-arg name="customerName" value="Alex" />
+		<constructor-arg name="contachNumber"
+			value="+41-4568585944" />
+		<constructor-arg name="address" ref="address" />
+		<constructor-arg>
+			<list>
+				<ref bean="product1" />
+				<ref bean="product2" />
+				<ref bean="product3" />
+				<ref bean="product4" />
+			</list>
+		</constructor-arg>
+	</bean>
+
+	<bean id="address" class="com.professionalit.bean.Address">
+		<constructor-arg value="Pune" />
+		<constructor-arg value="Maharastra" />
+	</bean>
+
+
+	<bean id="product1" class="com.professionalit.bean.Product">
+		<constructor-arg value="101" />
+		<constructor-arg value="Mobile" />
+	</bean>
+	<bean id="product2" class="com.professionalit.bean.Product">
+		<constructor-arg value="102" />
+		<constructor-arg value="Smart Watch" />
+	</bean>
+	<bean id="product3" class="com.professionalit.bean.Product">
+		<constructor-arg value="103" />
+		<constructor-arg value="Shoes" />
+	</bean>
+	<bean id="product4" class="com.professionalit.bean.Product">
+		<constructor-arg value="104" />
+		<constructor-arg value="Bike" />
+	</bean>
+
+	</beans>
+
